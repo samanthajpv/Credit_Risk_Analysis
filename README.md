@@ -16,36 +16,64 @@ The purpose of this project was to evaluate the performance of selected supervis
 ## Results
 For the purpose of this project and to ensure consistency between tests, random state of 1 was used for each sampling algorithm. Models A through D used the resampled data to train a logistic regression model.
 
-A. Naive Random Oversampling
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
+**A. Naive Random Oversampling**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Random%20Naive%20Oversampling.png" width="500" height="300"/>
+</p>
 
-B. SMOTE Oversampling
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
 
-C. Cluster Centroids (Undersampling)
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
+**B. SMOTE Oversampling**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/SMOTE.png" width="500" height="275"/>
+</p>
 
-D. SMOTEENN (Combination of Over and Undersampling)
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
 
-E. Balanced Random Forest Classifier
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
-    - Importances:
+**C. Cluster Centroids (Undersampling)**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Cluster%20Centroids.png" width="500" height="275"/>
+</p>
 
-F. Easy Ensemble AdaBoost Classifier
-    - Balanced Accuracy Score:
-    - Precision Score:
-    - Recall Score:
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
+
+**D. SMOTEENN (Combination of Over and Undersampling)**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/SMOTEENN.png" width="500" height="275"/>
+</p>
+
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
+
+**E. Balanced Random Forest Classifier**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Balanced%20Random%20Forest%20Classifier.png" width="500" height="275"/>
+</p>
+
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Importances.png" width="600" height="225"/>
+</p>
+
+- Importances:
+
+**F. Easy Ensemble AdaBoost Classifier**
+<p align="middle">
+    <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Easy%20Ensemble%20Classifier.png" width="500" height="275"/>
+</p>
+
+- Balanced Accuracy Score:
+- Precision Score:
+- Recall Score:
 
 ## Summary
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If none, justify reasoning.
