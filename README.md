@@ -2,7 +2,7 @@
 Machine Learning Classification Models to Predict Credit Risk
 
 ## Project Overview 
-The purpose of this project was to evaluate the performance of selected supervised machine learning models used for classification in predicting credit risk. A total of six models will be used on an unbalanced dataset with focus on over- and undersampling, and ensemble algorithms. The datasest used was from LendingClub dated Q1 of 2019.
+The purpose of this project was to evaluate the performance of selected supervised machine learning models used for classification in predicting credit risk. A total of six models were used on an unbalanced dataset with focus on over- and undersampling, and ensemble algorithms. The datasest used was from LendingClub dated Q1 of 2019.
 
 ### Resources
 - Data Source: [LoanStats_2019Q1.csv](https://github.com/samanthajpv/Credit_Risk_Analysis/blob/d8ce71daad78eaf3aa5305cefcf2eac6c8ee3a2d/LoanStats_2019Q1.csv)
@@ -17,7 +17,7 @@ The purpose of this project was to evaluate the performance of selected supervis
 For the purpose of this project and to ensure consistency between tests, random state of 1 was used for each sampling algorithm.
 
 **A. Naive Random Oversampling**
- - ```RandomOverSampler```: oversampling the minority class through random sampling with replacement [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html)
+ - ```RandomOverSampler```: oversampling the minority class through random sampling with replacement ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.RandomOverSampler.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Random%20Naive%20Oversampling.png" width="500" height="300"/>
 </p>
@@ -27,7 +27,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Recall Score: high_risk = 0.74 | low_risk = 0.61
 
 **B. SMOTE**
-- ```SMOTE```: synthetic minority oversampling technique, like random oversampling but new instances are interpolated [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html)
+- ```SMOTE```: synthetic minority oversampling technique, like random oversampling but new instances are interpolated ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.over_sampling.SMOTE.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/SMOTE.png" width="500" height="275"/>
 </p>
@@ -37,7 +37,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Recall Score: high_risk = 0.63 | low_risk = 0.69
 
 **C. Cluster Centroids**
-- ```ClusterCentroids```: undersamples the majority class through replacing a cluster of samples by a centroid of a KMeans algorithm [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.ClusterCentroids.html)
+- ```ClusterCentroids```: undersamples the majority class through replacing a cluster of samples by a centroid of a KMeans algorithm ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.under_sampling.ClusterCentroids.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Cluster%20Centroids.png" width="500" height="275"/>
 </p>
@@ -47,7 +47,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Recall Score: high_risk = 0.69 | low_risk = 0.40
 
 **D. SMOTEENN**
-- ```SMOTEENN```: combination of over and undersampling [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTEENN.html)
+- ```SMOTEENN```: combination of over and undersampling ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.combine.SMOTEENN.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/SMOTEENN.png" width="500" height="275"/>
 </p>
@@ -57,7 +57,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Recall Score: high_risk = 0.73 | low_risk = 0.59
 
 **E. Balanced Random Forest Classifier**
-- ```BalancedRandomForestClassifier```: randomly under-samples each boostrap sample [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html)
+- ```BalancedRandomForestClassifier```: randomly under-samples each boostrap sample ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.BalancedRandomForestClassifier.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Balanced%20Random%20Forest%20Classifier.png" width="500" height="275"/>
 </p>
@@ -67,7 +67,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Recall Score: high_risk = 0.70 | low_risk = 0.87
 
 **F. Easy Ensemble AdaBoost Classifier**
-- ```EasyEnsembleClassifier```: undersamples majority class by training on different balanced bootstrap samples through bagging Adaboost learners [see more](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html)
+- ```EasyEnsembleClassifier```: undersamples majority class by training on different balanced bootstrap samples through bagging Adaboost learners ([see more](https://imbalanced-learn.org/stable/references/generated/imblearn.ensemble.EasyEnsembleClassifier.html))
 <p align="middle">
     <img src="https://github.com/samanthajpv/Credit_Risk_Analysis/blob/8bedee6cb71551ae3e531ef2d1acd9ecfccce801/Images/Easy%20Ensemble%20Classifier.png" width="500" height="275"/>
 </p>
@@ -83,6 +83,7 @@ For the purpose of this project and to ensure consistency between tests, random 
 - Out of the 6 models, the best **recall** scores are seen in the Easy Ensemble Classifier. This model is more likely to produce less false negatives for both high and low risk loan applications. 
 
 **Recommendation:**
+
 Precision scores across the models are approximately the same but balanced accuracy scores vary. The recommended model to use is the Easy Ensemble Classifier. Aside from having the highest average scores, for loan prediction risk analysis, the recall score outweighs precision since false negatives are coupled with high cost. It is also recommended to scale the features before training the model and further examine which features to include in order to improve the model's performance.
 
 ## Reference
