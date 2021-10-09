@@ -10,8 +10,8 @@ The purpose of this project was to evaluate the performance of selected supervis
     - Libraries: scikit-learn, imbalanced-learn, collections, pathlib, numpy, pandas
 - Software: Jupyter Notebook
 - Code:
-    - [credit_risk_resampling.ipynb](https://github.com/samanthajpv/Credit_Risk_Analysis/blob/d8ce71daad78eaf3aa5305cefcf2eac6c8ee3a2d/credit_risk_resampling.ipynb)
-    - [credit_risk_ensemble.ipynb](https://github.com/samanthajpv/Credit_Risk_Analysis/blob/d8ce71daad78eaf3aa5305cefcf2eac6c8ee3a2d/credit_risk_ensemble.ipynb)
+    - [credit_risk_resampling.ipynb](https://github.com/samanthajpv/Credit_Risk_Analysis/blob/main/credit_risk_resampling.ipynb)
+    - [credit_risk_ensemble.ipynb](https://github.com/samanthajpv/Credit_Risk_Analysis/blob/main/credit_risk_ensemble.ipynb)
 
 ## Results
 For the purpose of this project and to ensure consistency between tests, random state of 1 was used for each sampling algorithm.
